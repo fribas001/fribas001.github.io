@@ -1,0 +1,30 @@
+---
+title: Sionna × DiffeRT
+description: A controlled comparison of propagation paths, motion and phase.
+---
+
+**Availability: local comparison preview.** This animation accompanies the DiffeRT-Bridge 0.6.2 shared-segment experiment.
+
+```{=html}
+<video class="video-frame" controls playsinline preload="metadata" poster="../assets/comparison.webp" aria-label="Sionna and DiffeRT shared-segment comparison animation"><source src="../assets/sionna-differt.mp4" type="video/mp4"><p><a href="../assets/sionna-differt.mp4">Download the comparison video.</a></p></video>
+```
+
+[Open or download the MP4](../assets/sionna-differt.mp4)
+
+## What to look for
+
+The one-minute visual comparison moves through paths, coverage, receiver motion, short corner routes and phase. The corner discussion begins at **00:37** and the phase discussion at **00:43**.
+
+The local experiment uses the same physical minimum segment length in both engines and explicitly aligns selected geometry and field conventions. It illustrates why differences in defaults can change a comparison even when the rendered scenes look identical.
+
+## Comparison scope
+
+The accompanying local record limits the aligned comparison to CPU line-of-sight and specular paths, triangular meshes, isotropic antennas and a shared 3.5 GHz material snapshot. Geometry reconstruction is detached and does not provide geometry gradients.
+
+Agreement on this room and trajectory is specific to this fixture and selected profiles. It does not establish that the two libraries are equivalent for all scenes or interactions.
+
+## Reproduction material
+
+The local delivery includes the editable Blender timeline, profile launchers, comparison evidence and source bundle. This website includes only the compact animation and poster. A future public case-study release should link the exact code, launch profile and numerical outputs together.
+
+[How to publish a reproducible result](../tutorials/publish-results.qmd)
