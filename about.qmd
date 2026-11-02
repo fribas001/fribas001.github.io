@@ -1,0 +1,26 @@
+---
+title: About & credits
+---
+
+## Felipe Oliveira Ribas
+
+This collection brings together Blender workflows, radio-propagation tools and visual explanations for RF and electromagnetic simulation.
+
+[GitHub profile](https://github.com/fribas001) · [Talks](talks.qmd) · [Software](software.qmd)
+
+## Site design
+
+The documentation structure and dark scientific presentation are inspired by [Molecular Nodes](https://bradyajohnston.github.io/MolecularNodes/). This is an independent site built with [Quarto](https://quarto.org), using original layout code and the project’s own simulation imagery.
+
+## Media and source credits
+
+- **Vegetation image:** the public [SionnaRT-Bridge procedural vegetation example](https://github.com/fribas001/sionnart-bridge/tree/main/examples/procedural-vegetation-paths). The website copy is compressed for delivery.
+- **Antwerp render:** the local Antwerp Mobility 0.6 moving-body demo. Geographic data © [OpenStreetMap contributors](https://www.openstreetmap.org/copyright), licensed under [ODbL](https://opendatacommons.org/licenses/odbl/1-0/).
+- **Comparison animation and poster:** the local Sionna/DiffeRT shared-segment delivery associated with DiffeRT-Bridge 0.6.2.
+- **Conference videos:** embedded from the original [Blender YouTube channel](https://www.youtube.com/@BlenderOfficial). Playback and availability are controlled by YouTube.
+
+Code, datasets, media and third-party dependencies retain their respective licenses; this starter does not relicense them under a single blanket license. Consult each linked project and source record for reuse terms.
+
+## Content status
+
+This starter was assembled on **1 November 2026** from public repository information and selected local project documentation. Software availability and case-study scope are labeled on their pages. Local-development pages do not imply that a public package has been released.

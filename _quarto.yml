@@ -1,0 +1,84 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - software.qmd
+    - tutorials/*.qmd
+    - examples/*.qmd
+    - talks.qmd
+    - reproducibility.qmd
+    - about.qmd
+  resources:
+    - assets/
+    - .nojekyll
+
+website:
+  title: "RF & EMF Lab"
+  site-url: https://fribas001.github.io
+  description: "Blender scenes, radio propagation and reproducible simulation workflows by Felipe Oliveira Ribas."
+  favicon: assets/mark.svg
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    background: "#24554f"
+    foreground: "#ffffff"
+    logo: assets/mark.svg
+    left:
+      - href: software.qmd
+        text: Software
+      - href: tutorials/first-scene.qmd
+        text: Tutorials
+      - href: examples/index.qmd
+        text: Examples
+      - href: talks.qmd
+        text: Talks
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/fribas001
+        aria-label: GitHub profile
+  sidebar:
+    style: docked
+    collapse-level: 2
+    contents:
+      - section: Getting started
+        contents:
+          - software.qmd
+          - tutorials/first-scene.qmd
+          - tutorials/publish-results.qmd
+      - section: Case studies
+        contents:
+          - examples/index.qmd
+          - examples/vegetation.qmd
+          - examples/antwerp.qmd
+          - examples/engine-comparison.qmd
+      - section: Research resources
+        contents:
+          - talks.qmd
+          - reproducibility.qmd
+          - about.qmd
+  page-footer:
+    left: "Felipe Oliveira Ribas · RF & EMF Lab"
+    right:
+      - text: Built with Quarto
+        href: https://quarto.org
+      - text: Sources & credits
+        href: about.qmd
+
+format:
+  html:
+    theme: [darkly, theme.scss]
+    css: styles.css
+    toc: true
+    toc-title: On this page
+    code-copy: true
+    anchor-sections: true
+    link-external-newwindow: true
+    smooth-scroll: true
+    lang: en
+
+execute:
+  enabled: false

@@ -1,0 +1,49 @@
+---
+title: Software
+description: Blender tools and simulation engines used across the projects.
+---
+
+Blender provides the scene and visual workflow. The simulation engine supplies the physical model. Keep their versions and responsibilities explicit when reproducing an example.
+
+## SionnaRT-Bridge
+
+**Public project · current inspected release: 2.1.0.**
+
+Prepare procedural scenes in Blender, run Sionna RT, and inspect paths and spatial maps. Timeline sampling connects changing scene parameters with channel results; exports support subsequent analysis.
+
+[Repository](https://github.com/fribas001/sionnart-bridge) · [Release 2.1.0](https://github.com/fribas001/sionnart-bridge/releases/tag/v2.1.0) · [Installation guide](https://github.com/fribas001/sionnart-bridge/blob/main/src/sionnart_bridge/README.md) · [Validation](https://github.com/fribas001/sionnart-bridge/blob/main/docs/validation.md)
+
+The public release documents a tested Windows/CUDA environment. Its release checks do not establish support for every operating system or CPU configuration. Use the environment documented for the particular example; the extension and Sionna RT have independent version numbers.
+
+## Mitsuba–Blender compatibility
+
+**Public project.** A Blender 4.5 compatibility adaptation of Mitsuba–Blender, supporting scene export for the related workflows. Consult its own compatibility notes before combining it with a newer Blender installation.
+
+[Repository](https://github.com/fribas001/mitsuba-blender-4.5-compatibility)
+
+## DiffeRT-Bridge
+
+**Local development · inspected source: 0.6.2.**
+
+A companion Blender workflow using DiffeRT and JAX. The local comparison work examines how geometric tolerances, material values, numerical precision and export conventions affect agreement with Sionna.
+
+[View the engine comparison](examples/engine-comparison.qmd). A public download for this local development version is not linked here.
+
+## Mobility Bridge
+
+**Local development · inspected source: 0.9.0.**
+
+Connect JuPedSim pedestrian trajectories, SUMO traffic, and locally captured Skybrush drone motion to Blender displays and synchronized radio receivers. The inspected project also contains Antwerp UAV placement and evacuation studies.
+
+[View the Antwerp case study](examples/antwerp.qmd). The illustration on that page comes from the earlier 0.6 moving-body demo; it is not evidence that every later feature was used in that scene.
+
+## Choose the model for the question
+
+| Question | Workflow |
+|---|---|
+| How do scene geometry and materials affect radio paths? | Blender + Sionna RT |
+| How do two ray-tracing implementations compare under matched assumptions? | Sionna RT + DiffeRT comparison fixtures |
+| How does receiver motion affect sampled radio links? | Mobility Bridge + the documented radio companion |
+| How do I prepare and explain CT-derived geometry? | Blender modeling and the [conference talk](talks.qmd#ct-models) |
+
+Absorbed power, internal tissue fields and SAR require a suitable electromagnetic model, material data and validation. They are not established by a propagation-path visualization alone. Keep those studies distinct from outdoor or indoor channel simulations.

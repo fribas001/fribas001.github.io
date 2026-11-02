@@ -1,0 +1,30 @@
+---
+title: Talks & videos
+description: Blender conference presentations on simulation environments and CT-derived models.
+---
+
+## Building Procedural Simulation Environments
+
+**BCON26 · published by Blender.** The embed preserves the supplied starting point, **28:40**.
+
+```{=html}
+<iframe class="video-frame" src="https://www.youtube-nocookie.com/embed/tUAMVAh3OMo?start=1720" title="Building Procedural Simulation Environments — BCON26" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+[Watch from 28:40](https://www.youtube.com/watch?v=tUAMVAh3OMo&t=1720s) · [Watch from the beginning](https://www.youtube.com/watch?v=tUAMVAh3OMo)
+
+## Exploring 5G Effects on Insects through CT-Scanned 3D Models {#ct-models}
+
+**Blender Conference 2024 · published by Blender.** The embed preserves the supplied starting point, **08:19**.
+
+```{=html}
+<iframe class="video-frame" src="https://www.youtube-nocookie.com/embed/k435L7_-HfM?start=499" title="Exploring 5G Effects on Insects through CT-Scanned 3D Models — Blender Conference 2024" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```
+
+[Watch from 08:19](https://www.youtube.com/watch?v=k435L7_-HfM&t=499s) · [Watch from the beginning](https://www.youtube.com/watch?v=k435L7_-HfM)
+
+Video titles and channel attribution were checked against YouTube metadata on 1 November 2026. These recordings are embedded from their original publisher.
+
+## Local simulation animation
+
+The [Sionna/DiffeRT case study](examples/engine-comparison.qmd) includes a playable one-minute comparison of paths, coverage, motion and phase.

@@ -1,0 +1,34 @@
+---
+title: Reproducibility
+description: Connect a visual result to the numerical experiment that produced it.
+---
+
+A useful research page connects the rendered scene to the actual numerical experiment. Record enough information to identify and repeat that experiment.
+
+## Minimum record
+
+| Component | Record |
+|---|---|
+| Identity | Study name, date, code commit or release, scene and data hashes |
+| Environment | Blender, extension, solver and dependency versions; CPU/GPU backend |
+| Geometry | Units, coordinate frame, evaluated meshes, transforms, material assignments |
+| Radio | Frequency, antenna patterns and orientation, TX/RX positions, power convention |
+| Solver | Enabled interactions, depth, sample budget, tolerances, seed and execution profile |
+| Time | Scene frames, physical timestamps, solved epochs and any display interpolation |
+| Results | Exact quantity, units, complex/real convention, masks and missing-path handling |
+| Evidence | Baseline, comparison method, validation scope and known limitations |
+
+## Visual and numerical evidence
+
+A smooth Blender animation can display sparse solver snapshots. State which frames were solved and whether a line is held, interpolated or recalculated.
+
+Keep channel gain, received power, field magnitude, absorbed power and SAR distinct. Label the measured or simulated quantity and its assumptions rather than using a generic “EMF level” label.
+
+## Public project records
+
+- [SionnaRT-Bridge validation](https://github.com/fribas001/sionnart-bridge/blob/main/docs/validation.md)
+- [Reproducibility guidance](https://github.com/fribas001/sionnart-bridge/blob/main/docs/reproducibility.md)
+- [Vegetation study material](https://github.com/fribas001/sionnart-bridge/tree/main/reproducibility/vegetation)
+- [Software citation metadata](https://github.com/fribas001/sionnart-bridge/blob/main/CITATION.cff)
+
+Use a versioned software reference and the matching dataset record when citing an experiment. Confirm that a reserved archive record is published before presenting its DOI as an available download.

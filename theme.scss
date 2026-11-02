@@ -1,0 +1,18 @@
+/*-- scss:defaults --*/
+$body-bg: #1d2229;
+$body-color: #dce4e7;
+$link-color: #85d9c5;
+$headings-color: #f2f7f7;
+$primary: #85d9c5;
+$font-family-sans-serif: "Segoe UI", system-ui, -apple-system, sans-serif;
+$font-size-base: 1rem;
+$code-bg: #29323a;
+$code-color: #dceee8;
+$border-color: #3c4952;
+$navbar-padding-y: .8rem;
+/*-- scss:rules --*/
+.navbar { border-bottom: 1px solid rgba(255,255,255,.12); }
+.navbar-brand { font-weight: 650; letter-spacing: -.02em; }
+.navbar-logo { max-height: 30px; }
+.sidebar { font-size: .92rem; }
+.sidebar-item-section { margin-top: .9rem; }

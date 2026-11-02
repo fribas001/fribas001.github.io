@@ -1,0 +1,15 @@
+/_site/
+/.quarto/
+/_freeze/
+*.blend
+*.blend1
+*.npz
+*.h5
+*.hdf5
+.env
+.env.*
+__pycache__/
+.DS_Store
+Thumbs.db
+
+**/*.quarto_ipynb
