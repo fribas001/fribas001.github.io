@@ -1,0 +1,36 @@
+---
+title: Your first scene
+description: Start from a reproducible Blender example, then change one parameter.
+---
+
+Begin with the public SionnaRT-Bridge vegetation example. It contains an editable scene and stored visual results, so there is a concrete baseline to inspect before running new simulations.
+
+## 1. Select a release and environment
+
+Open the [SionnaRT-Bridge installation guide](https://github.com/fribas001/sionnart-bridge/blob/main/src/sionnart_bridge/README.md) and the matching [validation record](https://github.com/fribas001/sionnart-bridge/blob/main/docs/validation.md). Follow those instructions for the Blender extension and external solver environment.
+
+Record Blender, extension, Python, Sionna RT, Mitsuba and Dr.Jit versions. Do not substitute the environment from a different local experiment without checking compatibility.
+
+## 2. Open a supplied example
+
+Download the scene and supporting files from the [procedural vegetation example](https://github.com/fribas001/sionnart-bridge/tree/main/examples/procedural-vegetation-paths). Check the supplied hashes where available and save a working copy of the Blender file.
+
+Inspect the plant geometry, transmitter, receiver, configured materials and imported paths. Scrub the timeline to understand which scene parameters change.
+
+## 3. Establish a baseline
+
+Use the example’s settings and the installed extension’s documented run controls. Begin with one frame. Confirm scene scale, device placement and radio materials before increasing the workload.
+
+Save the result separately from the supplied example. Record the frame, frequency, antenna settings, enabled interactions, solver limits and seed where supported.
+
+## 4. Change one parameter
+
+Choose one controlled change: vegetation geometry, receiver position, or a material parameter. Keep the remaining settings fixed and solve again.
+
+Compare the same quantity and units. A path-gain map, coherent received power, and a sum of individual path powers answer different questions; label each explicitly.
+
+## 5. Export a compact result
+
+Keep the editable scene and numerical outputs with the experiment. Export a legible still image, a short explanatory animation and a small table of the compared quantities for the website.
+
+[Publish a result](publish-results.qmd) · [Reproducibility checklist](../reproducibility.qmd)
