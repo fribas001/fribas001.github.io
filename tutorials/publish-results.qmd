@@ -1,0 +1,70 @@
+---
+title: Publish a result
+description: Turn a completed local simulation into a useful research page.
+---
+
+Each case study should let a visitor understand the question, inspect the result and find the exact material needed to reproduce it.
+
+## Use a consistent page structure
+
+1. **Question:** what changes and what is held fixed?
+2. **Scene:** geometry, dimensions, materials, TX/RX placement and motion.
+3. **Method:** software versions, solver settings, enabled interactions and assumptions.
+4. **Result:** one clear figure or video, followed by numerical evidence with units.
+5. **Limits:** what was approximated, omitted or not validated?
+6. **Reproduce:** a versioned code reference, scene/data download and run instructions.
+
+## Put each file in the right place
+
+| Material | Suggested destination |
+|---|---|
+| Explanations and tutorial steps | Quarto `.qmd` pages in this website |
+| Compact figures and short preview clips | `assets/` in this website |
+| Full Blender movies and conference recordings | YouTube embeds with direct links |
+| Source code and issue tracking | The relevant GitHub software repository |
+| Large `.blend` scenes and packaged examples | Versioned GitHub Release assets |
+| Archived datasets supporting a paper | A published repository such as Zenodo, with a verified DOI |
+| Lightweight interactive result viewers | Static HTML/JavaScript plus compact exported data |
+
+Keep the website source in its own folder. Publish selected outputs from the working projects, rather than making the entire Codex working directory a website.
+
+## Add a new page
+
+Create `examples/my-study.qmd` and use this outline:
+
+````markdown
+---
+title: "A descriptive study title"
+description: "The question and the main comparison."
+---
+
+## Question
+State the comparison and the controlled variables.
+
+## Method
+Record the exact scene, versions and settings.
+
+## Results
+![Describe the quantity and units](../assets/my-study.webp)
+
+## Limitations
+State the boundaries of the evidence.
+
+## Reproduce
+Link to a versioned release and its instructions.
+````
+
+Add the page to the `website.sidebar.contents` list in `_quarto.yml` and link it from `examples/index.qmd`. The existing `examples/*.qmd` render pattern includes it in the build.
+
+## Preview and publish
+
+Install [Quarto](https://quarto.org/docs/get-started/) and run these commands from the website folder:
+
+```powershell
+quarto preview
+quarto render
+```
+
+Preview while editing; render before pushing. The included GitHub Actions workflow renders and deploys changes pushed to `main` after GitHub Pages is configured to use **GitHub Actions**. Pull requests build without deploying.
+
+GitHub Pages serves the generated website. GPU simulations and Python workers run separately; this site’s build has code execution disabled. See [Quarto publishing](https://quarto.org/docs/publishing/github-pages.html) and [GitHub custom workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
