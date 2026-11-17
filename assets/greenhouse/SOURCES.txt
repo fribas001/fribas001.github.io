@@ -1,0 +1,10 @@
+Original author-supplied TEMC manuscript figures for the greenhouse Sketchfab description.
+Paper: Propagation and Exposure Assessment of RIS-Shaped mmWave Fields in a Greenhouse
+DOI: https://doi.org/10.1109/TEMC.2026.3725464
+
+Images copied byte-for-byte from the author's project assets; no new simulation or reconstruction.
+propagation.png | source: paper-propagation.png | SHA256: 2c1253f327c54f64a14ed9986e4f2cdd6215f48389b0c240bb0bd3423e53003e
+bee-pabs.png | source: paper-bee-pabs.png | SHA256: a5c34d7c32aaa6d4fd2e11d7d94dc0212bac57b09339d2ac75aef41bf1976bc7
+head-apd.png | source: paper-human-apd.png | SHA256: 0edfa03eb3cb5c273c63f9686499757afd71d007472593bb2f50056b76bd35ea
+
+Propagation uses A/B/C/D; exposure plots use A/B/C. Follow each figure's legend. Exposure axes are logarithmic. Rights remain with the original authors/publisher.
