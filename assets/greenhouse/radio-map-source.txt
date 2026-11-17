@@ -1,0 +1,10 @@
+Radio map: Fig. 4 from the local author copy of RIS-Enhanced Propagation and Exposure Evaluation in Modern Greenhouses, EuCAP 2026.
+Paper DOI: https://doi.org/10.23919/EuCAP68105.2026.11612394
+
+The original embedded image Im4 was extracted from PDF page 3; no axes, labels, or map pixels were edited.
+Metric: path gain (dB), receiver plane height 2 m, cell resolution 0.1 m; all multipath included. Bright RIS-assisted path follows the row at y = -4.95 m.
+EuCAP configuration: 26 GHz, 24 dBm TX, 100 x 100 RIS cells. This is a single steered-link example, distinct from the later TEMC 440-RX / 20 dBm study.
+
+PNG SHA256: 9ea40686b39e21dde11dd8fa231c84b6f86bb31832a596485b3782d9d0953076
+Author PDF SHA256: fe58dc9769269dd02ad1ded4efbec21bc167f29c47efe563808177861484ec7e
+Rights remain with the original authors/publisher.
